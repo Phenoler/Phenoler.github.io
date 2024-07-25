@@ -371,46 +371,27 @@
 </div>
 
 
-<div>
-    <!--添加总阅读次数-->
-    <div>
-        <span>本站总访问量</span>
-        <span id="site_total_read_count">Loading...</span>
-    </div>
-    <script>
-        async function sleep(ms = 1000) {
-            return await new Promise(resolve => {
-                const timer = setTimeout(() => {
-                    clearTimeout(timer)
-                    return resolve()
-                }, ms)
-            })
-        }
-        async function site_read_count() {
-            const className = 'Counter',
-                query = new AV.Query(className)
-            return query.find()
-                .then(_ => _.map(i => i.attributes.time))
-                .then(_ => _.reduce((a, b) => a + b))
-        }
-        new Promise(resolve => {
-            const timer = setInterval(() => {
-                if (typeof AV !== "undefined") {
-                    clearInterval(timer)
-                    return resolve()
-                }
-            }, 250)
-        })
-            .then(() => site_read_count())
-            .then(_ => {
-                const s = ` ${_} 次`
-                document.getElementById("site_total_read_count").innerHTML = s
-            })
-            .catch(e => console.error(e.message))
-    </script>
-</div>
-
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
 
 
