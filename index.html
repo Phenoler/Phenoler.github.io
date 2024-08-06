@@ -218,7 +218,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-08-06 13:13:11 / 修改时间：13:15:25" itemprop="dateCreated datePublished" datetime="2024-08-06T13:13:11+08:00">2024-08-06</time>
+              <time title="创建时间：2024-08-06 13:13:11 / 修改时间：13:18:40" itemprop="dateCreated datePublished" datetime="2024-08-06T13:13:11+08:00">2024-08-06</time>
             </span>
 
           
@@ -254,50 +254,14 @@
 
       
           <h1 id="Java-方法重载简介"><a href="#Java-方法重载简介" class="headerlink" title="Java 方法重载简介"></a>Java 方法重载简介</h1><p>在Java编程语言中，方法重载（Method Overloading）是一种允许开发者在一个类中创建多个具有相同名称但参数列表不同的方法的技术。方法重载是Java多态性的一个体现，它提高了代码的可读性和可复用性。</p>
-<h1 id="方法重载的概念"><a href="#方法重载的概念" class="headerlink" title="方法重载的概念"></a>方法重载的概念</h1><p>方法重载指的是在同一个类中，允许存在多个方法名相同但参数列表不同的方法。这些方法可以具有不同的参数数量、不同的参数类型，或者不同的参数顺序。</p>
-<h1 id="方法重载的规则"><a href="#方法重载的规则" class="headerlink" title="方法重载的规则"></a>方法重载的规则</h1><p>以下是Java中实现方法重载必须遵循的规则：</p>
-<ol>
-<li>方法名称相同：重载的方法必须具有相同的名称。</li>
-<li>参数列表不同：重载方法的参数列表必须不同，可以是参数数量不同、参数类型不同，或者参数顺序不同。</li>
-<li>返回类型可以不同：重载方法的返回类型可以相同也可以不同，但这不是重载的决定因素。</li>
-<li>访问修饰符可以不同：重载方法的访问修饰符可以不同。</li>
-</ol>
-<h1 id="方法重载的实现"><a href="#方法重载的实现" class="headerlink" title="方法重载的实现"></a>方法重载的实现</h1><p>下面通过一个简单的例子来演示如何在Java中实现方法重载。</p>
-<pre><code>public class MethodOverloadingExample &#123;
-
-    // 方法重载：无参数
-    public void display() &#123;
-        System.out.println(&quot;无参数的方法调用&quot;);
-    &#125;
-
-    // 方法重载：一个整数参数
-    public void display(int number) &#123;
-        System.out.println(&quot;一个整数参数的方法调用，参数值：&quot; + number);
-    &#125;
-
-    // 方法重载：两个整数参数
-    public void display(int number1, int number2) &#123;
-        System.out.println(&quot;两个整数参数的方法调用，参数值：&quot; + number1 + &quot; 和 &quot; + number2);
-    &#125;
-
-    // 方法重载：一个字符串参数
-    public void display(String text) &#123;
-        System.out.println(&quot;一个字符串参数的方法调用，参数值：&quot; + text);
-    &#125;
-
-    public static void main(String[] args) &#123;
-        MethodOverloadingExample example = new MethodOverloadingExample();
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/08/06/Java%E6%96%B9%E6%B3%95%E7%9A%84%E9%87%8D%E8%BD%BD/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
         
-        example.display(); // 调用无参数方法
-        example.display(5); // 调用一个整数参数方法
-        example.display(10, 20); // 调用两个整数参数方法
-        example.display(&quot;Hello, World!&quot;); // 调用一个字符串参数方法
-    &#125;
-&#125;
-</code></pre>
-<p>输出结果<br>无参数的方法调用<br>一个整数参数的方法调用，参数值：5<br>两个整数参数的方法调用，参数值：10 和 20<br>一个字符串参数的方法调用，参数值：Hello, World!</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>方法重载是Java中一种非常有用的特性，它允许我们使用相同的名字来执行不同的操作，从而使得代码更加清晰和易于管理。通过合理使用方法重载，我们可以提高代码的可读性和可维护性。记住，重载的关键在于参数列表的不同，而不是返回类型或访问修饰符。</p>
-
       
     </div>
 
