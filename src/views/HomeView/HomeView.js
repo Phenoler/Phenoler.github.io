@@ -7,7 +7,7 @@ export default {
   setup() {
     const { currentTheme } = useTheme()
     const contentSection = ref(null)
-    const dailyQuote = ref('每日分享：好身体和好心情') // 默认值
+    const dailyQuote = ref('每日分享：好身体和好心情') 
     const isLoading = ref(false)
 
     const features = [
