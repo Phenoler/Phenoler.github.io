@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   
   // 🔥 添加这行关键配置 - GitHub Pages必须的
-  base: '/',
+  base: './',
   
   // 添加构建配置
   build: {
