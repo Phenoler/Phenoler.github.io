@@ -18,11 +18,23 @@
 
     <section class="testimonial">
       <blockquote class="testimonial-quote">
-        "每日分享：好身体和好心情"
+        {{ dailyQuote }}
       </blockquote>
+      <button 
+        class="refresh-quote" 
+        @click="fetchDailyQuote"
+        :disabled="isLoading"
+      >
+        {{ isLoading ? '加载中...' : '换一句' }}
+      </button>
     </section>
   </main>
 </template>
 
-<script src="./HomeView.js"></script>
+<script>
+// 正确导入组件配置
+import HomeView from './HomeView.js';
+export default HomeView
+</script>
+
 <style scoped src="./HomeView.css"></style>

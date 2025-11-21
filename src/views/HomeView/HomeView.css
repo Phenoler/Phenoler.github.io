@@ -122,3 +122,26 @@
     font-size: 1.2rem;
   }
 }
+
+.refresh-quote {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.refresh-quote:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.refresh-quote:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
