@@ -1,9 +1,6 @@
 PhenolWeb - 个人技术博客
-https://img.shields.io/badge/Vue.js-3.5-green
-https://img.shields.io/badge/Vite-7.0-blue
-https://img.shields.io/badge/GitHub_Pages-Deployed-success
 
-一个基于 Vue 3 + Vite 构建的现代化个人技术博客
+一个基于 Vue 3 + Vite 构建的个人技术博客
 
 🌐 在线访问
 博客地址： https://phenoler.github.io
@@ -64,7 +61,6 @@ npm install
 开发模式
 bash
 npm run dev
-访问 http://localhost:8080
 
 生产构建
 bash
